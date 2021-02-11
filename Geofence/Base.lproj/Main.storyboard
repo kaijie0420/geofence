@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Geofence" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="153-1x-zp8">
+                                <rect key="frame" x="0.0" y="49" width="414" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geofence Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkv-Gw-reu">
+                                        <rect key="frame" x="20" y="9.5" width="130" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ImX-4b-uyd">
+                                        <rect key="frame" x="166" y="3" width="60" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="3JD-sI-3za"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ImX-4b-uyd" firstAttribute="leading" secondItem="hkv-Gw-reu" secondAttribute="trailing" constant="16" id="1Tr-wJ-vId"/>
+                                    <constraint firstAttribute="height" constant="40" id="3gs-J1-cPt"/>
+                                    <constraint firstItem="hkv-Gw-reu" firstAttribute="leading" secondItem="153-1x-zp8" secondAttribute="leading" constant="20" id="i9q-h0-iqE"/>
+                                    <constraint firstItem="ImX-4b-uyd" firstAttribute="centerY" secondItem="153-1x-zp8" secondAttribute="centerY" id="vN1-AK-aCj"/>
+                                    <constraint firstItem="hkv-Gw-reu" firstAttribute="centerY" secondItem="153-1x-zp8" secondAttribute="centerY" id="vsK-93-Ftf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zG-Yp-9PA">
+                                <rect key="frame" x="0.0" y="89" width="414" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geofence is not set" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPC-h2-krB">
+                                        <rect key="frame" x="115.5" y="9.5" width="180" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="t5C-ZD-eKe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvi-F2-OVp">
+                                        <rect key="frame" x="20" y="9.5" width="49.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="bvi-F2-OVp" firstAttribute="centerY" secondItem="6zG-Yp-9PA" secondAttribute="centerY" id="DmB-cq-Ywc"/>
+                                    <constraint firstItem="bvi-F2-OVp" firstAttribute="leading" secondItem="6zG-Yp-9PA" secondAttribute="leading" constant="20" id="Pdz-w0-dFs"/>
+                                    <constraint firstAttribute="height" constant="40" id="X6e-gu-vp3"/>
+                                    <constraint firstItem="SPC-h2-krB" firstAttribute="leading" secondItem="bvi-F2-OVp" secondAttribute="trailing" constant="46" id="h1P-Rt-klc"/>
+                                    <constraint firstItem="SPC-h2-krB" firstAttribute="centerY" secondItem="6zG-Yp-9PA" secondAttribute="centerY" id="jiD-Kc-Cbj"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Haj-6c-fhm">
+                                <rect key="frame" x="0.0" y="137" width="414" height="759"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6zG-Yp-9PA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Xc-Bi-tHw"/>
+                            <constraint firstItem="6zG-Yp-9PA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E8u-52-PBo"/>
+                            <constraint firstItem="Haj-6c-fhm" firstAttribute="top" secondItem="6zG-Yp-9PA" secondAttribute="bottom" constant="8" id="EfT-gx-gNl"/>
+                            <constraint firstItem="153-1x-zp8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HUs-CE-ZlA"/>
+                            <constraint firstItem="153-1x-zp8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WYt-Di-prM"/>
+                            <constraint firstItem="153-1x-zp8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="e8c-0f-Jy1"/>
+                            <constraint firstItem="6zG-Yp-9PA" firstAttribute="top" secondItem="153-1x-zp8" secondAttribute="bottom" id="ln0-t2-LTL"/>
+                            <constraint firstAttribute="bottom" secondItem="Haj-6c-fhm" secondAttribute="bottom" id="q53-gR-QBR"/>
+                            <constraint firstItem="Haj-6c-fhm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qF5-aA-E4W"/>
+                            <constraint firstItem="Haj-6c-fhm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sK6-0O-jsn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="Haj-6c-fhm" id="a7d-6M-Mak"/>
+                        <outlet property="radiusText" destination="ImX-4b-uyd" id="vpc-EG-Eak"/>
+                        <outlet property="statusLabel" destination="SPC-h2-krB" id="3Ta-qS-v8m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
